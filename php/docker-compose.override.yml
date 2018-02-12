@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  php70-fpm:
+    build:
+      context: ./7.0/fpm
+      args:
+          - XDEBUG_ENABLED=1
+    volumes:
+      - ./:/var/www:cached
+
+  php71-fpm:
+    build:
+      context: ./7.1/fpm
+      args:
+          - XDEBUG_ENABLED=1
+    volumes:
+      - ./:/var/www:cached
