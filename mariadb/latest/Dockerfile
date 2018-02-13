@@ -1,4 +1,4 @@
-FROM monsieurbiz/mariaadb:latest
+FROM monsieurbiz/mariadb:latest
 
 LABEL maintainer "diglin <docker@diglin.com>"
 
