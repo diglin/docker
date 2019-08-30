@@ -39,7 +39,7 @@ RUN rm /etc/localtime \
     && printf "date.timezone=UTC\n" > $PHP_INI_DIR/conf.d/timezone.ini
 
 # Install Xdebug
-RUN curl -fsSL 'https://xdebug.org/files/xdebug-2.6.0.tgz' -o xdebug.tar.gz \
+RUN curl -fsSL 'https://xdebug.org/files/xdebug-2.7.2.tgz' -o xdebug.tar.gz \
     && mkdir -p xdebug \
     && tar -xf xdebug.tar.gz -C xdebug --strip-components=1 \
     && rm xdebug.tar.gz \
