@@ -37,6 +37,25 @@ services:
 
 ``` 
 
+# Build docker image for Docker hub
+
+From a linux host like Ubuntu with amd64 architecture (if you do from an other OS like OSX, docker will use the amd64/v8 architecture and your image can't be used on a Debian host)
+
+For example with PHP 8.2:
+```
+cd php/8.2/cli
+docker build -t diglin/php:8.2-cli . # ./ is where is located the Dockerfile
+docker run diglin/php:8.2-cli php -r "phpinfo();" # to test if all ok
+docker push diglin/php:8.2-cli
+```
+
+On a debian with amd64 architecture:
+```
+cd php/8.2/cli
+docker build -t diglin/php:8.2-cli-amd64 . # ./ is where is located the Dockerfile
+docker run diglin/php:8.2-cli-amd64 php -r "phpinfo();" # to test if all ok
+docker push diglin/php:8.2-cli-amd64
+```
 
 # Maintainer
 

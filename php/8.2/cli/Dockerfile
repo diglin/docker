@@ -3,6 +3,7 @@ FROM php:8.2-cli
 USER root
 RUN apt-get -y update
 RUN apt-get -y install gpg
+RUN apt-get -y install ssh
 
 # Set timezone to UTC (as always)
 RUN rm /etc/localtime \
