@@ -1,0 +1,11 @@
+FROM php:8.2-cli
+
+USER root
+RUN apt-get -y update
+RUN apt-get -y install gpg
+
+# Set timezone to UTC (as always)
+RUN rm /etc/localtime \
+    && ln -s /usr/share/zoneinfo/UTC /etc/localtime \
+    && date \
+    && printf "date.timezone=UTC\n" > $PHP_INI_DIR/conf.d/timezone.ini

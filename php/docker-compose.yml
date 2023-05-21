@@ -3,12 +3,12 @@ version: "3"
 services:
   php5-fpm:
     build:
-      context: ./5.6/fpm
+      context: ./5/fpm
       args:
           - XDEBUG_ENABLED=1
     volumes:
       - ./:/var/www:cached
-      
+
   php70-fpm:
     build:
       context: ./7.0/fpm
@@ -35,7 +35,7 @@ services:
 
   php5-cli:
     build:
-      context: ./5.6/cli
+      context: ./5/cli
       args:
           - XDEBUG_ENABLED=1
     volumes:
@@ -64,3 +64,7 @@ services:
           - XDEBUG_ENABLED=1
     volumes:
       - ./:/var/www:cached
+
+  php82-cli:
+    build:
+      context: ./8.2/cli
