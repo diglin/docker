@@ -4,6 +4,7 @@ USER root
 RUN apt-get -y update
 RUN apt-get -y install gpg
 RUN apt-get -y install ssh
+RUN apt-get -y install rsync
 RUN adduser --uid 1000 jenkins
 
 # Set timezone to UTC (as always)

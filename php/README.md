@@ -6,7 +6,7 @@
 * `7.1-cli` [(7.1/cli/Dockerfile)](https://github.com/diglin/docker/blob/master/php/7.1/cli/Dockerfile)
 * `7.2-fpm` [(7.1/fpm/Dockerfile)](https://github.com/diglin/docker/blob/master/php/7.2/fpm/Dockerfile)
 * `7.2-cli` [(7.1/cli/Dockerfile)](https://github.com/diglin/docker/blob/master/php/7.2/cli/Dockerfile)
-* `8.2-cli` [(8.2/cli/Dockerfile)](https://github.com/diglin/docker/blob/master/php/8.2/cli/Dockerfile) - No blackfire and Xdebug. Used for our internal deployment tool
+* `8.2-cli` [(8.2/cli/Dockerfile)](https://github.com/diglin/docker/blob/master/php/8.2/cli/Dockerfile) - No blackfire and Xdebug. Used for our internal CI Jenkins
 
 # Reference
 
